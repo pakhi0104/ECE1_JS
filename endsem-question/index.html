@@ -1,0 +1,51 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #dbeafe;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .box{
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px gray;
+        text-align: center;
+        width: 300px;
+    }
+
+    input, button{
+        padding: 10px;
+        margin: 5px;
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #result{
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h2>Sum of numbers from 1 to N</h2>
+    <input type="number" id="num" placeholder="Enter N" />
+    <button onclick="findSum()">Calculate Sum</button>
+
+    <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
